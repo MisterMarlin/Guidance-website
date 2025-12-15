@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="icon" href="media/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+
+<header class="hero d-flex align-items-center">
+   <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+
+            <a href="index.html" class="navbar-brand">
+                <img src="media/logo.png" style="width: 60px;">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Guidance</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="visitor guidance.html">Visitor guidance</a></li>
+                            <li><a class="dropdown-item" href="ecofriendly.html">Ecofriendly tips</a></li>
+                            <li><a class="dropdown-item" href="feedback.html">Feedback</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html">About us</a></li>
+                </ul>
+
+                <button type="button" class="btn btn-custom ms-auto" data-bs-toggle="modal" data-bs-target="#first">Log In</button>
+            </div>
+
+        </div>
+    </nav>
+
+       <div class="modal fade" id="first" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" >
+                    <div class="modal-dialog  modal-dialog-centered">
+                      <div class="modal-content">
+                
+                
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Log In To Your Account</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                
+                        <div class="modal-body">
+                          <form action="index.html">
+                            <div class="mb-3">
+                              <label for="email" class="form-label">Email address</label>
+                              <input type="email" class="form-control shadow-none" id="email" placeholder="Name@gmail.com">
+                            </div>
+                            <div class="mb-3">
+                              <label for="pass" class="form-label">Password</label>
+                              <input type="password" class="form-control shadow-none" id="pass">
+                            </div>
+                            <div class="form-check flex-row-reverse">
+                              <input type="checkbox" class="form-check-input shadow-none" id="check">
+                              <label class="form-check-label" for="check">Always Sign me in</label>
+                              <div class="d-flex float-end"><p>New Member?</p><a href="#" class="text-decoration-none"  data-bs-toggle="modal" data-bs-target="#second">Sign Up</a></div>
+                            </div>
+                          </form>
+                        </div>
+                
+                        <div class="modal-footer">
+                          <a href="index.html" class="btn btn-primary mx-auto" type="submit" style="width: 250px;">Log In</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+                
+                  <div class="modal fade" id="second" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" >
+                    <div class="modal-dialog  modal-dialog-centered">
+                      <div class="modal-content">
+                
+                
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5">Sign Up</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                
+                        <div class="modal-body">
+                          <form>
+                            <div class="mb-3">
+                              <label for="email" class="form-label">Email address</label>
+                              <input type="email" class="form-control shadow-none" id="email" placeholder="Name@gmail.com">
+                            </div>
+                            <div class="mb-3">
+                              <label for="pass" class="form-label">Password</label>
+                              <input type="password" class="form-control shadow-none" id="pass">
+                            </div>
+                            <div class="mb-3">
+                              <label for="pass" class="form-label">Confirm your password again</label>
+                              <input type="password" class="form-control shadow-none" id="pass">
+                            </div>
+                            <div class="mb-3">
+                              <div class="container">
+                                <div class="row">
+                                  <div class="col-md-6 d-grid">
+                                    <input type="radio" class="btn-check" name="options-outlined" id="male" autocomplete="off" checked>
+                                    <label class="btn btn-outline-primary" for="male"><i class="bi bi-gender-male"></i></label>
+                                  </div>
+                                  <div class="col-md-6 d-grid">
+                                    <input type="radio" class="btn-check" name="options-outlined" id="female" autocomplete="off">
+                                    <label class="btn btn-outline-danger" for="female"><i class="bi bi-gender-female"></i></label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-check">
+                              <input type="checkbox" class="form-check-input shadow-none" id="check">
+                              <label class="form-check-label" for="check">I agree to the <a href="#" data-bs-toggle="modal" data-bs-target="#second-half">Terms and Policy</a></label>
+                            </div>
+                          </form>
+                        </div>
+                
+                        <div class="modal-footer">
+                          <button class="btn btn-primary mx-auto" type="button" style="width: 250px;" data-bs-toggle="modal" data-bs-target="#third">Sign Up</button>
+                          <a href=""></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div class="modal fade" id="third" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" >
+                    <div class="modal-dialog  modal-dialog-centered">
+                      <div class="modal-content">
+                
+                
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5">Sign Up Successful</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                
+                        <div class="modal-body">
+                            <img src="media/tick.jpg" alt="success" style="width: 100px; height: 100px;" class="d-block mx-auto">
+                            <p class="text-center">You have successfully signed up your account. You can now log in.</p>
+                        </div>
+                
+                        <div class="modal-footer">
+                          <button class="btn btn-primary mx-auto" type="button" style="width: 250px;" data-bs-toggle="modal" data-bs-target="#first">Go Back</button>
+                          <a href=""></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="modal fade" id="second-half" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" >
+                    <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                
+                
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5">Terms and Policy</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                
+                        <div class="modal-body">
+                            <p>The terms and policies of your website are designed to establish a clear and transparent understanding between you, the owner, and your users regarding the acceptable use, privacy, and operation of the platform. By accessing and using the website, users agree to comply with all the outlined terms, which may be updated periodically to reflect changes in the website's functionality, services, or applicable legal requirements. The website is committed to respecting user privacy and implements measures to protect personal data, ensuring that information such as names, email addresses, and other identifying details are collected only with user consent and are utilized solely for improving services, personalizing user experiences, and maintaining communication. Unauthorized activities such as hacking, spamming, or any form of misuse that undermines the integrity of the platform are strictly prohibited, and such actions may lead to immediate termination of access. Additionally, all content on the website, including text, images, videos, and other media, is protected under intellectual property laws and remains the exclusive property of the website unless explicitly stated otherwise. Users are prohibited from reproducing, distributing, or modifying the content without prior written permission. The website employs cookies to optimize user experience, track interactions, and gather data for analytical purposes, with users retaining the ability to manage cookie preferences through browser settings. External links may be included for informational or promotional purposes, but the website is not responsible for the practices, content, or policies of these third-party sites. It is important for users to read and understand the terms thoroughly, as continued use of the platform implies agreement with any changes made to these policies over time. Should users have any questions, concerns, or disputes regarding the terms, they are encouraged to reach out to the website’s support team for clarification or resolution. Security is a top priority, and while industry-standard encryption and safeguards are in place to protect user data, the website cannot guarantee absolute security against potential breaches. The website reserves the right to modify or discontinue any feature, service, or aspect of the platform at any time without prior notice, and it shall not be held liable for any loss or inconvenience caused by such changes. Users are encouraged to periodically review the terms and policies to stay informed about their rights and responsibilities while using the website, ensuring a safe and enjoyable experience for everyone involved.</p>
+                        </div>
+                
+                        <div class="modal-footer">
+                          <button class="btn btn-primary mx-auto" type="button" style="width: 250px;" data-bs-toggle="modal" data-bs-target="#second">Go Back</button>
+                          <a href=""></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="fw-bold">Taungoo Local <span style="color:#7ccf48">Park</span></h1>
+            <p class="mt-3">
+                Kandawgyi Lake in Taungoo is a historic lake in the town. The lake dates back to the time when Taungoo — then known as Ketumadi — was a royal capital under the rule of kings like Bayinnaung. Historically, the lake and its water-system served as a vital water source for the town as well as possibly to support agriculture and population during times when Taungoo was a royal city.
+            </p>
+            <a class="btn btn-success mt-3 px-4 py-2" href="Exploremore.html">Explore More</a>
+        </div>
+    </div>
+</header>
+
+<section id="diensten" class="section-dark text-center">
+    <div class="container">
+        <h2 class="fw-bold mb-4">Steps to follow during revitalization</h2>
+      </div>
+    </div>
+  </nav>
+
+      <div class="row g-4 service-icons mt-3">
+            <div class="col-md-3">
+                <i class="bi bi-brush"></i>
+                <h5 class="mt-2">Reduce</h5>
+            </div>
+            <div class="col-md-3">
+                <i class="bi bi-tree"></i>
+                <h5 class="mt-2">Reuse</h5>
+            </div>
+            <div class="col-md-3">
+                <i class="bi bi-wrench-adjustable"></i>
+                <h5 class="mt-2">Recycle</h5>
+            </div>
+            <div class="col-md-3">
+                <i class="bi bi-basket"></i>
+                <h5 class="mt-2">Repurpose</h5>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <section id="top-destinations" class="dest-row">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+              <div>
+                <h3 class="mb-0">Revitalized Park features</h3>
+              </div>
+            </div>
+
+            <div class="row ">
+                <div class="col-sm-6 col-md-3">
+                <div class="custom-card hover-pop reveal-bottom">
+                  <a href="walking.html"><img src="media/kan.jpg" alt="walking"></a>
+                  <div class="reveal-content">
+                    <div class="d-flex justify-content-between align-items-end">
+                      <div>
+                        <h6 class="mb-1">Walking Trails</h6>
+                        <small class="muted">Walking trails offer significant physical and mental health benefits, including improving cardiovascular health, strengthening muscles and bones, and reducing stress, anxiety, and depression.</small>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="col-sm-6 col-md-3">
+                <div class="custom-card hover-pop reveal-bottom">
+                  <a href="flowering.html"><img src="media/lily.jpg" alt="garden"></a>
+                  
+                  <div class="reveal-content">
+                    <div class="d-flex justify-content-between align-items-end">
+                      <div>
+                        <h6 class="mb-1">Flower Native Plant Gardens</h6>
+                        <small class="muted">These plants are well-adapted to local climates, requiring less water, fertilizer, and pesticides. </small>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="col-sm-6 col-md-3">
+                <div class="custom-card hover-pop reveal-bottom">
+                  <a href="seating.html"><img src="media/shaded area.jpg" alt="seating"></a>
+                 
+                  <div class="reveal-content">
+                    <div class="d-flex justify-content-between align-items-end">
+                      <div>
+                        <h6 class="mb-1">Seating and Shaded area</h6>
+                        <small class="muted">Comfort , sun protection(shaded shields people from direct sunlight).</small>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="col-sm-6 col-md-3">
+                <div class="custom-card hover-pop reveal-bottom">
+                  <a href="play zones.html"><img src="media/play.jpg" alt="playground"></a>
+                  <div class="reveal-content">
+                    <div class="d-flex justify-content-between align-items-end">
+                      <div>
+                        <h6 class="mb-1">Play Zones</h6>
+                        <small class="muted">Play zones in parks offer numerous developmental and community benefits</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+
+<section id="overons" class="section-dark">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-md-6">
+                <h2 class="fw-bold">What it’s like <span style="color:#7ccf48">Today?</span></h2>
+                <p class="mt-3">
+                   Today, Kandawgyi Lake serves as a pleasant ornamental and recreational lake. People visit to stroll or cycle around its perimeter under shady trees , a relaxing way to pass time. Around the lake there are eateries, a small amusement-park-style area, and possibly simple entertainment options (e.g. places to eat, drink, relax). The lake remains a focal point for local visitors and tourists wanting a calm, scenic and historical place to visit in Taungoo.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="media/walking.jpg" class="img-fluid rounded-3 shadow" alt="path">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section-dark text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-5">Environmental Eco Tips</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="project-card">
+          <img src="media/protect-our-environment-fb.jpg" class="img-fluid"
+               data-bs-toggle="collapse" data-bs-target="#eco1" style="cursor:pointer;">
+          <h6 class="mt-3">Protect Green Areas</h6>
+          <div class="collapse mt-2" id="eco1">
+            <p class="small">
+              Green areas provide oxygen, support wildlife, and reduce air pollution.
+              Avoid damaging plants, stay on paths, and respect natural habitats to
+              help maintain a healthy and balanced park environment.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="project-card">
+          <img src="media/reduce.jpg" class="img-fluid"
+               data-bs-toggle="collapse" data-bs-target="#eco2" style="cursor:pointer;">
+          <h6 class="mt-3">Reduce Waste</h6>
+          <div class="collapse mt-2" id="eco2">
+            <p class="small">
+              Carry reusable items such as water bottles and bags when visiting the park.
+              Reducing waste helps prevent litter, protects animals, and keeps the park
+              clean and enjoyable for everyone.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="project-card">
+          <img src="media/red.jpg" class="img-fluid"
+               data-bs-toggle="collapse" data-bs-target="#eco3" style="cursor:pointer;">
+          <h6 class="mt-3">Reduce Carbon Footprint</h6>
+          <div class="collapse mt-2" id="eco3">
+            <p class="small">
+              Walking, cycling, or using public transport to reach the park reduces
+              greenhouse gas emissions. Small daily choices like saving energy also
+              help slow climate change and protect the environment.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="collapse mt-5" id="moreEcoTips">
+
+      
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="project-card">
+            <img src="media/save water.jpg" class="img-fluid"
+                 data-bs-toggle="collapse" data-bs-target="#eco4" style="cursor:pointer;">
+            <h6 class="mt-3">Save Water</h6>
+            <div class="collapse mt-2" id="eco4">
+              <p class="small">
+                Water is a valuable resource that should not be wasted.
+                Turn off taps properly, avoid unnecessary water use, and help
+                protect lakes and rivers from pollution.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="project-card">
+            <img src="media/plant tree.jpg" class="img-fluid"
+                 data-bs-toggle="collapse" data-bs-target="#eco5" style="cursor:pointer;">
+            <h6 class="mt-3">Plant Trees</h6>
+            <div class="collapse mt-2" id="eco5">
+              <p class="small">
+                Trees provide shade, improve air quality, and support wildlife.
+                Planting and protecting trees helps reduce heat and creates
+                a more comfortable and sustainable park environment.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="project-card">
+            <img src="media/save energy.jpg" class="img-fluid"
+                 data-bs-toggle="collapse" data-bs-target="#eco6" style="cursor:pointer;">
+            <h6 class="mt-3">Save Energy</h6>
+            <div class="collapse mt-2" id="eco6">
+              <p class="small">
+                Saving energy reduces pollution and conserves natural resources.
+                Switch off lights and electrical devices when not in use to
+                help reduce environmental impact.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row g-4 mt-2">
+
+        <div class="col-md-4">
+          <div class="project-card">
+            <img src="media/recyccle.jpg" class="img-fluid"
+                 data-bs-toggle="collapse" data-bs-target="#eco7" style="cursor:pointer;">
+            <h6 class="mt-3">Recycle Materials</h6>
+            <div class="collapse mt-2" id="eco7">
+              <p class="small">
+                Recycling helps reduce landfill waste and conserves resources.
+                Separate recyclable materials properly to ensure they can be
+                reused and turned into new products.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="project-card">
+            <img src="media/public transport.jpg" class="img-fluid"
+                 data-bs-toggle="collapse" data-bs-target="#eco8" style="cursor:pointer;">
+            <h6 class="mt-3">Use Public Transport</h6>
+            <div class="collapse mt-2" id="eco8">
+              <p class="small">
+                Using public transport reduces traffic congestion and air pollution.
+                It is a more sustainable way to travel and helps keep the city and
+                park environment cleaner.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="project-card">
+            <img src="media/protect wild life.jpg" class="img-fluid"
+                 data-bs-toggle="collapse" data-bs-target="#eco9" style="cursor:pointer;">
+            <h6 class="mt-3">Protect Wildlife</h6>
+            <div class="collapse mt-2" id="eco9">
+              <p class="small">
+                Wildlife plays an important role in maintaining ecological balance.
+                Avoid disturbing animals, do not feed them, and help protect their
+                natural habitats within the park.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <button class="btn btn-success mt-4" data-bs-toggle="collapse" data-bs-target="#moreEcoTips">Find More</button>
+
+  </div>
+</section>
+
+<section id="contact" class="section-dark">
+    <div class="container text-center">
+        <h2 class="fw-bold">Need Something?</h2>
+        <button type="button" class="btn btn-outline-success mt-3 px-4 py-2" data-bs-toggle="modal" data-bs-target="#contactModal"> Contact Us </button>
+    </div>
+
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-4">
+
+      <div class="modal-header">
+        <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <form>
+          
+          <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-control" placeholder="Enter your name" required>
+          </div>
+
+          
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" placeholder="Enter your email" required>
+          </div>
+
+          
+          <div class="mb-3">
+            <label class="form-label">Subject</label>
+            <input type="text" class="form-control" placeholder="Subject">
+          </div>
+
+          
+          <div class="mb-3">
+            <label class="form-label">Message</label>
+            <textarea class="form-control" rows="4" placeholder="Write your message..." required></textarea>
+          </div>
+
+          
+          <div class="d-grid">
+            <button type="submit" class="btn btn-success">Send Message</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</section>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <h5 class="fw-bold">Team Alliance</h5>
+                <p class="mt-2">
+                    17/165, Yadanar street, Taungoo <br><br>
+                    Email: <a href="#">km83144@gmail.com</a>
+                </p>
+            </div>
+
+    <div class="col-md-4">
+                <h5 class="fw-bold">Pages</h5>
+                <ul class="list-unstyled mt-2">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="visitor guidance.html">Visitor Guidance</a></li>
+                    <li><a href="ecofriendly.html">Ecofriendly Tips</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="refrences links.docx">References Links</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <h5 class="fw-bold">Social Medias</h5>
+                <ul class="list-unstyled mt-2">
+                  <i class="fas fa-band-aid"></i>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <i class="fas fa-cat"></i>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <i class="fas fa-dragon"></i>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <i class="far fa-clock"></i>
+                </ul>
+            </div>
+        </div>
+
+        <div class="text-center mt-4 text-secondary">
+            © 2025 Team ALLIENCE — All rights reserved.
+        </div>
+    </div>
+</footer>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>    
+</html>
