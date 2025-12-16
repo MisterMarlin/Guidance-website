@@ -162,7 +162,27 @@
       .fa-linkedin {
         color: white;
       }
+   .info-box {
+      background-color: #111;
+      padding: 25px;
+      border-radius: 18px;
+      border: 2px solid #7ccf48;
+      margin-bottom: 30px;
+      text-align: center;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
 
+    .info-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px #7ccf48;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      color: #7ccf48;
+      margin-bottom: 20px;
+    }
   </style>
 </head>
 
@@ -339,6 +359,13 @@
 
   <h2 style="color: #7ccf48; text-align: center; margin-bottom: 30px; font-weight: bold; margin-top: 150px;">Feedbacks</h2>
 
+<div class="py-5 mb-3">
+  <div class="info-box">
+    <h3 class="mx-auto" style="font-weight: bold;">We Value your Feedback!</h3>
+    <p>Your opinions and suggestions are important to us because they help us understand what we are doing well and what we can improve. By sharing your thoughts, you are contributing to making our park a cleaner, safer, and more enjoyable place for everyone. Please take a moment to give us your honest feedback—every response helps us create positive changes for our community. Thank you for supporting our project!</p>
+  </div>
+</div>
+
   <div class="container">
     <div class="row" id="wall"></div>
   </div>
@@ -476,3 +503,4 @@ font-weight: bold;">Add</button>
 </body>
 
 </html>
+
